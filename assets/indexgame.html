@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  
+  <head>
+    <meta charset="utf-8">
+    <title>Hangman Game</title>
+
+		
+		<link rel="stylesheet" type="text/css" href="../assets/css/Style.css">
+		<link rel="stylesheet" type="text/css" href="css/Reset.css">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		
+			<!-- <script type="text/javascript" src="jquery-1.8.3.js"></script> -->
+			
+			<script type='text/javascript' language='javascript' src='javascript/hangman.js'/>
+			
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+
+			<!-- Latest compiled and minified CSS -->
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+			<!-- Optional theme -->
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+			<!-- Latest compiled and minified JavaScript -->
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+				
+		
+		
+	</head>
+	
+	<body onload="startGame()">
+
+
+	<div class="container">
+
+			 <div class="row">
+			  	<div class="col-md-12 jumbotron">
+				 	<div class="text center">
+				        <h1>Hangman Game</h1>
+				        <h2>Traveling around the World</h2>
+			        </div>
+	        	</div>
+    		</div>
+    </div>
+
+    <!-- game instructions -->
+
+	    <div class="container">
+		     <div class="row">
+		     	<div class="col-med-12">
+			    
+				      <h1> Guess the name of one of the must beautiful cities to visit around the world! </h1> 
+						</br>
+
+				      	<p> How to play.... Enter  a letter from A-Z on the form and click to validate the letter. If the chosen letter is contained in the name of the randomly selected city, the letter will show on the appropriate order within the name of the city in question.
+				      	</p></br>
+
+						<p>You have upto 5 chances to guess the name; if the letter is not contained in the name of the city, the letter will show below and you'll lose a chance/live.</p></br>
+						
+						<p>If you guessed the name of the city (all letters are revealed) – you are a WINNER, otherwise if you exausted your chances then I'm very sorry for you!.</p></br>
+		      
+	            </div>
+	         </div>   
+	         						
+					<h3> Guess a letter </h3>
+					</br>
+					<input id="letter" type="text">
+					</br>
+					<input type="button" value="guess" onClick="letter()"/>
+					</br>
+					<p id="answer"></p>
+					</br>
+					<p id="counter"></p>
+					</br>
+					<p id="stat"></p>
+							
+		
+		</div> <!-- end container -->
+	</body>
+</html>
+
